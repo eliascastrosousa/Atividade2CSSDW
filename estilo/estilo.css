@@ -93,16 +93,58 @@ imagem {
     animation-iteration-count: infinite;
     animation-name: muda_imagem;
 }
+
+@keyframes muda_imagem { seletores { propriedade_css: valor; } }
+
+
 @keyframes muda_imagem { 
-    seletores { 0%: background-image: ../imagens/Foto01.jpg;} 
-    seletores { 20%: background-image: ../imagens/Foto02.jpg;}
-    seletores { 40%: background-image: ../imagens/Foto03.jpg;}
-    seletores { 60%: background-image: ../imagens/Foto04.jpg;}
-    seletores { 80%: background-image: ../imagens/Foto05.jpg;}
-    seletores { 100%: background-image: ../imagens/Foto01.jpg;}
+        0%  { background-image: ../imagens/Foto01.jpg;} 
+        20%  { background-image: ../imagens/Foto02.jpg;}
+        40%  { background-image: ../imagens/Foto03.jpg;}
+        60%  { background-image: ../imagens/Foto04.jpg;}
+        80% { background-image: ../imagens/Foto05.jpg;}
+        100% { background-image: ../imagens/Foto01.jpg;}
 }
+
 footer {
     color: darkslategray;
     background-color: rgba(143, 188, 143, 85%);
     padding: 15px;
+}
+@media (min-width: 768px) {
+    nav {
+        padding: 20px 0px;
+    }
+    ul {
+        padding: 5px;
+    }
+    li {
+        width: 25%;
+        float: left;
+    }
+    ul :hover {
+        transform:  rotate(-5deg);
+    }
+    a {
+        font-size: 1.25rem;
+    }
+    .destaque {
+        padding: 10px;
+        font-size: 2rem;
+        width: 25%;
+        transition: width 1s;
+    }
+    .destaque :hover {
+        width: 40%;
+    }
+    .conteudo {
+        padding: 70%;
+    }
+    .clipe {
+        width: 50%;
+    }
+    .quadro_animado {
+        width: 620px;
+        height: 400px;
+    }   
 }
