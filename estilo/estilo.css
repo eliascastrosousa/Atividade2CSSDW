@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif ;
+    text-align: center;
+    font-weight: bold;
+    transition-delay: smooth;
+
+}
+nav {
+   top: 0; 
+   width: 100%;
+   position: fixed;
+   background-color: rgba(143, 188, 143, 85%);
+   z-index: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.fundo1 {
+    background-image: "../imagens/bg01.jpg" ;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fundo2 {
+    background-image: "../imagens/bg02.jpg" ;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fundo3 {
+    background-image: "../imagens/bg03.jpg" ;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.destaque {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: palegreen ;
+    background-color: teal;
+    padding: 10px;
+    width: 40%;
+    font-size: 1rem;
+    filter: drop-shadow(4px 4px gainsboro);
+    margin: auto;
+}
+.conteudo {
+    color: teal;
+    background-color: gainsboro;
+    padding: 90px 25px;
+}
+.texto {
+    text-align: justify;
+}
+h3 {
+    text-transform: uppercase;
+    color: teal;
+}
+imagem {
+    width: 100%;
+}
+.clipe {
+    width: 90%;
+    border: 5px ridge darkseagreen;
+}
+.quadro_animado {
+    width: 320px;
+    height: 200px;
+    margin: auto;
+    background-size: cover;
+    border-radius: 5%;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: muda_imagem;
+}
+@keyframes muda_imagem { 
+    seletores { 0%: background-image: ../imagens/Foto01.jpg;} 
+    seletores { 20%: background-image: ../imagens/Foto02.jpg;}
+    seletores { 40%: background-image: ../imagens/Foto03.jpg;}
+    seletores { 60%: background-image: ../imagens/Foto04.jpg;}
+    seletores { 80%: background-image: ../imagens/Foto05.jpg;}
+    seletores { 100%: background-image: ../imagens/Foto01.jpg;}
+}
+footer {
+    color: darkslategray;
+    background-color: rgba(143, 188, 143, 85%);
+    padding: 15px;
+}
