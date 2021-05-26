@@ -32,7 +32,7 @@ a {
     background-image: url("../imagens/bg02.jpg"); 
 }
 .fundo3 {
-    background-image: url("../imagens/bg03.jpg");
+    background-image: url("../imagens/bg03.jpg"); 
 }
 .fundo1, .fundo2, .fundo3 {
     position: relative;
