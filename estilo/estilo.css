@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Titillium Web', sans-serif ;
+    font-family: 'Titillium Web', sans-serif;
     text-align: center;
     font-weight: bold;
     scroll-behavior: smooth;
@@ -57,11 +57,13 @@ a {
 .conteudo {
     color: teal;
     background-color: gainsboro;
-    padding: 90px 25px
+    padding: 90px 25px;
 }
+
 .texto {
     text-align: justify;
 }
+
 h3 {
     text-transform: uppercase;
     color: teal;
@@ -98,6 +100,7 @@ footer {
     background-color: rgba(143, 188, 143, 85%);
     padding: 15px;
 }
+
 @media (min-width: 768px) {
     nav {
         padding: 20px 0px;
@@ -121,11 +124,11 @@ footer {
         width: 25%;
         transition: width 1s;
     }
-    .destaque :hover {
+    .destaque:hover {
         width: 40%;
     }
     .conteudo {
-        padding: 70%;
+        padding: 70px;
     }
     .clipe {
         width: 50%;
